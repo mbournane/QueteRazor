@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Expenditure>
+
+@{
+    var Expenditures = ViewData["Expenditures"] as List<Expenditure>;
+}
+
+<table border="2">
+    <tr>
+        <td>Nom</td>
+        <td>Date</td>
+        <td>Prix</td></tr>
+    @foreach (var Expenditure in Model)
+    {
+        <tr><td>@Expenditure.Nom</td><td>@Expenditure.DateDepense</td><td>@Expenditure.Price</td></tr>
+
+        
+
+    }
+    <tr>
+
+    </tr>
+</table>
